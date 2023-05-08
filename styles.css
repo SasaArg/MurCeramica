@@ -11,6 +11,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -26,9 +27,6 @@
 
 .headerBox nav {
     padding: 1%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-right: 2%;
 }
 
@@ -50,11 +48,11 @@
     color: var(--color6);
 }
 
+/*  Bienvenida y primera sección  */
 
 main {
     background-color: white;
 }
-
 
 .contenedorBienvenida h1 {
     font-size: 2.5rem;
@@ -69,17 +67,25 @@ main {
 }
 
 .section {
-    max-width: 90%;
-    margin: 5% auto;
+    max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     align-items: baseline;
+    margin: 50px auto;
 }
 
-.contenedor a {
-    display: inline-block;
+.contenedor{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.contenedor figure{
+    display: flex;
+    flex-direction: row;
+    height: 15rem;
+    width: 15rem;
 }
 
 .center {
@@ -140,6 +146,8 @@ figure .back p {
     line-height: 1.5rem;
 }
 
+/*  Botón Whatsapp  */
+
 .btn-wsp {
     position: fixed;
     bottom: 40px;
@@ -151,8 +159,7 @@ figure .back p {
     z-index: 100;
 }
 
-
-
+/*  Footer  */
 
 footer {
     text-align: center;
