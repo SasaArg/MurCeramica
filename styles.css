@@ -6,46 +6,86 @@
     --color5: #d58584;
     --color6: #e39984;
     --color7: #eddfbf;
+    --color8: #959595;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Georgia', sans-serif;
+    font-weight: 300;
 }
 
 /*  HEADER  */
 
 .headerBox {
-    padding: 2%;
+    margin: 0;
+    padding: 1.2rem;
     background-color: var(--color1);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.headerBox img {
+    width: 200px;
 }
 
 .headerBox nav {
     padding: 1%;
-    margin-right: 2%;
+    margin-right: 1%;
 }
 
 .headerBox nav li {
-    display: inline;
-    margin: 0 0 0 40px;
+    display: inline-block;
+    margin: 0 0 0 30px;
 }
 
-.headerBox nav a {
-    color: #000000;
+.headerBox .menu{
+    margin-left: 8rem;
+}
+
+.headerBox .menu a {
+    color: #010101;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 1.1rem;
     text-decoration: none;
 }
 
-.headerBox nav a:hover {
-    text-decoration: underline;
+.headerBox .menu a:hover {
     font-weight: bolder;
-    color: var(--color6);
+    color: var(--color8);
+}
+
+.redesSociales{
+    margin-left: 100px;
+}
+
+.redesSociales img {
+    width: 20px;
+    height: 20px;
+}
+
+.headerBox .redesSociales img:hover {
+    filter: invert(1) saturate(63%) brightness(70%);
+}
+
+.tiendaOnline li{
+    padding: 10px;
+    background-color: var(--color6);
+    border-radius: 25px;
+}
+
+.btn-tiendaOnline{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight:normal;
+}
+
+.tiendaOnline:hover{
+    opacity: 60%;
 }
 
 /*  Bienvenida y primera sección  */
@@ -56,13 +96,13 @@ main {
 
 .contenedorBienvenida h1 {
     font-size: 2.5rem;
+    font-weight: 700;
     padding-top: 50px;
     text-align: center;
-    text-transform: uppercase;
 }
 
 .contenedorBienvenida h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -76,12 +116,12 @@ main {
     margin: 50px auto;
 }
 
-.contenedor{
+.contenedor {
     max-width: 300px;
     max-height: 300px;
 }
 
-.contenedor figure{
+.contenedor figure {
     display: flex;
     flex-direction: row;
     height: 15rem;
@@ -149,14 +189,27 @@ figure .back p {
 /*  Botón Whatsapp  */
 
 .btn-wsp {
+    width: 60px;
+    height: 60px;
     position: fixed;
     bottom: 40px;
     right: 40px;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
+    background-color: #4dc247;
+    border-radius: 32px;
     z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-wsp img {
+    width: 40px;
+    height: 40px;
+    filter: invert(1);
+}
+
+.btn-wsp:hover {
+    opacity: 60%;
 }
 
 /*  Footer  */
@@ -164,4 +217,8 @@ figure .back p {
 footer {
     text-align: center;
     background-color: var(--color1);
+}
+
+footer img {
+    width: 200px;
 }
