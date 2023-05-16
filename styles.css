@@ -21,7 +21,7 @@
 
 .headerBox {
     margin: 0;
-    padding: 1.2rem;
+    padding: 1%;
     background-color: var(--color1);
     display: flex;
     justify-content:space-around;
@@ -34,16 +34,15 @@
 
 .headerBox nav {
     padding: 1%;
-    margin-right: 1%;
+    
 }
 
 .headerBox nav li {
     display: inline-block;
-    margin: 0 0 0 30px;
 }
 
-.headerBox .menu{
-    margin-left: 8rem;
+.headerBox .menu li{
+    margin: 0 0 0 30px;
 }
 
 .headerBox .menu a {
@@ -58,8 +57,11 @@
     color: var(--color8);
 }
 
-.redesSociales{
-    margin-left: 100px;
+#btn-hamburguesa{
+    display: none;
+    background-color: var(--color1);
+    border-style: none;
+    font-size: 20px;
 }
 
 .redesSociales img {
@@ -221,4 +223,23 @@ footer {
 
 footer img {
     width: 200px;
+}
+
+/* Responsive smaller screens */
+@media screen and (max-width:1200px) {
+
+}
+
+@media screen and (max-width:850px) {
+    .headerBox .menu {
+        display: none;
+    }
+    #btn-hamburguesa{
+        display: inline-block;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+
 }
