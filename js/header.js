@@ -14,8 +14,12 @@ let myHeader =`
             <a class="nav-link list" href="https://www.whatsapp.com/?lang=es"><img src="./img/whatsapp3.svg" width="20px"/></a>
             <a class="nav-link list" href="https://www.facebook.com/MurCeramica"><img src="./img/facebook2.png" width="20px"/> </a>
             <a class="nav-link list" href="https://instagram.com/murceramica?igshid=MzRIODBiNWFIZA=="><img src="./img/instagram2.png" width="20px"/></a>
-            
         </div>
+        <div class="tiendaOnline">
+        <nav class= "navbar-nav">
+            <a class="btn-tiendaOnline" href="#" target="_blank">Tienda Online</a>
+        </nav>
+    </div>
     </div>
 </div>
 </nav>

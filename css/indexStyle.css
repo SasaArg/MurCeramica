@@ -1,0 +1,17 @@
+
+.contenedorVideo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1% 10%;
+}
+
+
+.contenedorVideo video {
+    width: 500px;
+    height: 400px;
+    margin: 2% 5%;
+    border: solid;
+    border-radius: 10px;
+}

@@ -1,0 +1,197 @@
+@media only screen and (max-width: 600px) {
+    .contenedorVideo {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .contenedorVideo video {
+        width: 250px !important;
+        height: 200px !important;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .contenedorVideo video {
+        width: 300px !important;
+        height: 300px !important;
+    }
+
+    .titulo h1 {
+        font-size: 1.8rem !important;
+        font-weight: bolder;
+    }
+
+    .titulo h2 {
+        font-size: 1.5rem !important;
+        font-weight: bold;
+    }
+
+    .procesoCeramica {
+        margin: 5px 1px;
+        padding: 0px 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .procesoCeramica p {
+        font-size: 1.3rem;
+    }
+
+    .contenedor:hover figure {
+        animation: none;
+        transform: none;
+    }
+
+    figure .front,
+    figure .back {
+        transition: none;
+        transform: none;
+        position: static;
+        border-radius: 0%;
+        background-color: #ffffff;
+    }
+
+    figure {
+        width: 90%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    figure .back h2 {
+        font-size: 1.8rem;
+        margin-top: 1rem;
+        font-weight: bolder;
+    }
+
+    figure .back p {
+        font-size: 1.3rem;
+        line-height: normal;
+        margin-bottom: 0.50rem;
+    }
+
+    .contenedor a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+    }
+}
+
+
+@media only screen and (min-width: 769px) {
+
+    .contenedorVideo {
+        margin-top: 2%;
+    }
+
+    .contenedorVideo video {
+        width: 400px;
+        height: 400px;
+    }
+
+    .titulo h1 {
+        font-size: 3rem;
+        font-weight: bolder;
+    }
+
+    .titulo h2 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .procesoCeramica p {
+        margin: 5% 10%;
+        font-size: 1.2rem;
+    }
+
+    figure {
+        width: 19rem;
+        height: 19rem;
+    }
+
+    figure .back h2 {
+        font-size: 1.3rem;
+        line-height: 1.2rem;
+        margin-top: 1rem;
+        margin-bottom: 0.50rem;
+        font-weight: bold;
+    }
+
+    figure .back p {
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+        margin-block: 5px;
+    }
+
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    .contenedorVideo video {
+        width: 400px;
+        height: 400px;
+    }
+
+    figure .back h2 {
+        font-size: 1.5rem;
+    }
+
+    figure .back p {
+        line-height: 1.5rem;
+    }
+
+    .contenedor {
+        padding: 0 0.75rem;
+        margin: 0 0.75rem;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+    .contenedorVideo {
+        margin-top: 2%;
+    }
+
+    .contenedorVideo video {
+        width: 400px;
+        height: 400px;
+    }
+
+    .procesoCeramica p {
+        margin: 5% 10%;
+        font-size: 1.4rem;
+    }
+
+    .contenedor {
+        padding: 0 0.75rem;
+        margin: 0 0.75rem;
+    }
+
+    figure {
+        width: 400px;
+        height: 400px;
+    }
+
+    figure .back h2 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-top: 1.3rem;
+        font-weight: bolder;
+    }
+
+    figure .back p {
+        font-size: 1.3rem;
+        line-height: 2rem;
+        margin-bottom: 0.50rem;
+        font-weight: 20px;
+    }
+}
