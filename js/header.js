@@ -11,9 +11,9 @@ let myHeader =`
             <a class="nav-link list" href="./galeria.html">Galería</a>
             <a class="nav-link list" href="./productos.html">Productos</a>
             <a class="nav-link list" href="./contacto.html"> Contacto</a>
-            <a class="nav-link list" href="https://www.whatsapp.com/?lang=es"><img src="./img/whatsapp3.svg" width="20px"/></a>
-            <a class="nav-link list" href="https://www.facebook.com/MurCeramica"><img src="./img/facebook2.png" width="20px"/> </a>
-            <a class="nav-link list" href="https://instagram.com/murceramica?igshid=MzRIODBiNWFIZA=="><img src="./img/instagram2.png" width="20px"/></a>
+            <a class="nav-link list" href="https://wa.me/+5491158755260?text=Queria%20hacer%20una%20consulta%20sobre%20"><img src="./img/whatsapp3.svg" width="20px"/></a>
+            <a class="nav-link list" href="https://www.facebook.com/MurCeramica" target="_blank"><img src="./img/facebook2.png" width="20px"/> </a>
+            <a class="nav-link list" href="https://www.instagram.com/MurCeramica/"target="_blank"><img src="./img/instagram2.png" width="20px"/></a>
         </div>
         <div class="tiendaOnline">
         <nav class= "navbar-nav">

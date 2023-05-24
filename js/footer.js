@@ -8,9 +8,9 @@ let myFooter=`
             </div>
             <div class="box2">
                 <h5>Contactanos</h5><br>
-                <p>ceramica_mur@gmail.com</p>
-                <p>Tel: 11-12345678</p>
-                <p>Dirección: Av. Rivadavia 5678</p>
+                <p><a class="contactos" href="mailto:info@murceramica.com.ar">info@murceramica.com.ar</a></p>
+                <p>Tel: 11-58755260</p>
+                <p>Tel: 11-53468316</p>
                 <p>Copyright Cerámica Mür 2023.</p>
             </div>
             

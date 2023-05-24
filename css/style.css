@@ -1,0 +1,846 @@
+:root {
+    --color1: #e1f2ea;
+    --color2: #b1d1ce;
+    --color3: #658762;
+    --color4: #f6bbbf;
+    --color5: #d58584;
+    --color6: #e39984;
+    --color7: #eddfbf;
+    --color8: #959595;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--color3);
+    font-family: Quicksand;
+}
+
+/*  ----------------------  */
+/*   INICIO: HEADER - VIR   */
+/*  ----------------------  */
+nav {
+    background-color: var(--color1);
+}
+
+.nav-link:hover {
+    background: var(--color2);
+    color: var(--color3);
+    font-weight: bold;
+    transition: .3s;
+}
+/*  -------------------  */
+/*   FIN: HEADER - VIR   */
+/*  -------------------  */
+
+
+/*  --------------------------------------  */
+/*   INICIO: HEADER MODIFICACIONES - TEFY   */
+/*  --------------------------------------  */
+.navbar-expand-lg .navbar-collapse {
+    justify-content: space-around;
+}
+
+.navbar-nav {
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.navbar-nav a {
+    margin: 5px;
+}
+
+.tiendaOnline {
+    margin-right: 3rem !important;
+    margin-left: 3rem !important;
+    white-space: nowrap !important;
+    width: 300px !important;
+}
+
+.tiendaOnline a {
+    padding: 10px;
+    background-color: var(--color6);
+    border-radius: 25px;
+    align-self: center;
+}
+
+.btn-tiendaOnline {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #f1f1f1 !important;
+    font-weight: normal;
+}
+
+.tiendaOnline:hover {
+    opacity: 60%;
+}
+/*  -----------------------------------  */
+/*   FIN: HEADER MODIFICACIONES - TEFY   */
+/*  -----------------------------------  */
+
+
+/*  -----------------------  */
+/*   INICIO: TITULOS - VIR   */
+/*  -----------------------  */
+.titulo h1 {
+    font-size: 2.5rem;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.titulo h2 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.titulo {
+    border-bottom: 1px solid;
+}
+/*  --------------------  */
+/*   FIN: TITULOS - VIR   */
+/*  --------------------  */
+
+
+/*  ----------------------------------------  */
+/*   INICIO: FOTOS REVERSIBLES - VIR y TEFI   */
+/*  ----------------------------------------  */
+.contenedor a {
+    display: inline-block;
+}
+
+.center {
+    text-align: center;
+}
+
+.procesoCeramica
+
+/* nombre modificado - tefi */
+    {
+    max-width: 100%;
+    /* modificado - Tefi */
+    margin: 0.50rem;
+    /* modificado - Tefy */
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; (vir)*/
+    /* modificado - Tefy */
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.procesoCeramica p {
+    padding: 0 0.25rem;
+}
+
+.contenedor:hover figure {
+    -webkit-transform: perspective(600px) rotateY(180deg);
+    -ms-transform: perspective(600px) rotateY(180deg);
+    -o-transform: perspective(600px) rotateY(180deg);
+    transform: perspective(600px) rotateY(180deg);
+}
+
+figure {
+    display: inline-block;
+    width: 400px;
+    /* modificado - Tefy */
+    /*vir 280*/
+    height: 400px;
+    /* modificado - Tefy */
+    /*vir 280*/
+    margin: 15px 30px;
+    /* modificado - Tefy */
+    /*vir 15px 50px*/
+    position: relative;
+    transition: all ease .7s;
+    transform-style: preserve-3d;
+    transform: perspective(600px) rotateY(0deg);
+}
+
+figure .front,
+figure .back {
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+    transition: all ease .7s;
+}
+
+figure .front {
+    display: block;
+    backface-visibility: hidden;
+}
+
+figure .back {
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    /* modificado tefi */
+    color: var(--color3);
+    background-color: var(--color1);
+    /* modificado tefi */
+    /*vir color7*/
+    transform: perspective(600px) rotateY(180deg);
+    backface-visibility: hidden;
+    overflow: auto;
+    text-align: center;
+}
+
+figure .back h2 {
+    font-size: 1.2rem;
+    line-height: 1.1rem;
+    /* modificado - Tefy */
+    /*vir 1.5rem*/
+}
+
+figure .back p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+/*  ------------------------------------  */
+/*   FIN: FOTOS REVERSIBLES - VIR y TEFI  */
+/*  ------------------------------------  */
+
+
+/*  -------------------------------------  */
+/*   INICIO: PÁGINA DEL FORMULARIO - VIR   */
+/*  -------------------------------------  */
+.centrado,
+h3 {
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+}
+
+.centrado p {
+    text-align: left;
+}
+
+#boton {
+    background-color: var(--color1);
+    color: var(--color3);
+    border: none;
+}
+
+#boton:hover {
+    background-color: var(--color4);
+    color: black;
+}
+
+.form-control:focus {
+    outline-style: none;
+}
+/*  ----------------------------------  */
+/*   FIN: PÁGINA DEL FORMULARIO - VIR   */
+/*  ----------------------------------  */
+
+
+/*  ----------------------  */
+/*   INICIO: FOOTER - VIR   */
+/*  ----------------------  */
+.footer {
+    background-color: var(--color1);
+    position: relative;
+    /* modificado - Tefy */
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    /* modificado - Tefy */
+    padding: 20px 20px;
+    color: var(--color3);
+    font-size: 0.5rem;
+    margin: 0;
+}
+
+#tabla {
+    display: grid;
+    grid-template-areas:
+        "box1 box2";
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+
+}
+
+.box2 a:hover {
+    background: var(--color2);
+    color: var(--color3);
+    font-weight: bold;
+    transition: .3s;
+}
+
+.box1 {
+    margin-top: 40px;
+}
+
+.box1-item1,
+.box1-item2,
+.box1-item3 {
+    padding: 30px;
+}
+
+.box1,
+.box2 {
+    justify-self: center;
+}
+
+.contactos {
+    text-decoration: none;
+    color: var(--color3);
+}
+
+.contactos h5 {
+    font-size: 1rem;
+}
+
+.box1 img {
+    width: 30px;
+}
+
+.box1 h5{
+    font-size: 1.2rem;
+}
+
+.box2 h5{
+    font-size: 1.2rem;
+}
+
+.weather{
+    font-size: 0.9rem;
+}
+
+.box2 a,
+.box2 p {
+    font-size: 0.8rem;
+}
+/*  -------------------  */
+/*   FIN: FOOTER - VIR   */
+/*  -------------------  */
+
+
+/*  -------------------------------  */
+/*   INICIO: BOTON WHATSAPP - TEFI   */
+/*  -------------------------------  */
+.btn-wsp {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #4dc247;
+    border-radius: 32px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-wsp img {
+    width: 40px;
+    height: 40px;
+    filter: invert(1);
+}
+
+.btn-wsp:hover {
+    opacity: 60%;
+}
+/*  ----------------------------  */
+/*   FIN: BOTON WHATSAPP - TEFI   */
+/*  ----------------------------  */
+
+
+/*  ---------------------------  */
+/*   INICIO: CARROUSEL - SABRI   */
+/*  ---------------------------  */
+
+
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+
+    position: relative;
+    margin: auto;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    padding-top: 100px;
+
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: var(--color2);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: var(--color2);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: var(--color3);
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+/*  ------------------------  */
+/*   FIN: CARROUSEL - SABRI   */
+/*  ------------------------  */
+
+
+/*  --------------------------  */
+/*   INICIO: PRODUCTOS - JULI   */
+/*  --------------------------  */
+
+
+.productos {
+    display: flex;
+    justify-items: space-between;
+    list-style: none;
+    background-color: white;
+}
+
+.imagenesProd {
+    margin:10px 15px 10px 15px;
+    max-width: 70%;
+    justify-content: center;
+    align-items: center;
+    
+}.tituloProductos h1 {
+    text-decoration: underline;
+    text-align: center;
+    padding: 75px;
+}
+
+.tituloProductos p {
+    text-align: center;
+    margin-top: -75px;
+}
+
+
+.listaDeProductos {
+    display: flex;
+    justify-items: space-between;
+    list-style: none;
+
+}
+
+.listaDeProductos nav {
+    display: flex;
+    justify-items: space-between;
+    background-color: white;
+}
+
+
+.listaDeProductos nav li a {
+    background-color: var(--color4);
+    color: var(--color3);
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.listaDeProductos nav li a:hover {
+    background-color: var(--color7) ;
+}
+
+.listaDeProductos nav > li {
+    float: left;
+}
+
+.tituloProductos nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+    list-style: none;
+}
+
+.tituloProductos nav li:hover > ul {
+    display: block;
+}
+
+.tituloh4 {
+    background-color: var(--color4);
+    padding: 5px 10px;
+    text-align: center;
+    font-style: italic;
+    font-weight: auto;   
+}
+
+
+
+
+.contenedorVideo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1% 10%;
+}
+
+
+.contenedorVideo video {
+    width: 500px;
+    height: 400px;
+    margin: 2% 5%;
+    border: solid;
+    border-radius: 10px;
+}
+
+
+/*  ----------------------------  */
+/*   INICIO: RESPONSIVE - TODAS   */
+/*  ----------------------------  */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .slideshow-container {
+        max-width: 300px;
+    }
+	
+	    .contenedorVideo {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .contenedorVideo video {
+        width: 250px !important;
+        height: 200px !important;
+    }
+	
+	   .productos {
+        display: flew;
+        flex-wrap: wrap;
+    
+    }
+    .imagenesProd {
+        max-height: 350px;
+        max-width: 350px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .slideshow-container {
+        max-width: 350px;
+    }
+	    .productos {
+        display: flew;
+        flex-wrap: wrap;
+    }   
+    .imagenesProd {
+        max-height: 375px;
+        max-width: 375px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .slideshow-container {
+        max-width: 400px;
+    }
+	    .productos {
+        display: flew;
+        flex-wrap: wrap;
+    }   
+    .imagenesProd {
+        max-height: 410px;
+        max-width: 410px;
+    } 
+	
+    .contenedorVideo {
+        margin-top: 2%;
+    }
+
+    .contenedorVideo video {
+        width: 400px;
+        height: 400px;
+    }
+
+    .titulo h1 {
+        font-size: 3rem;
+        font-weight: bolder;
+    }
+
+    .titulo h2 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .procesoCeramica p {
+        margin: 5% 10%;
+        font-size: 1.2rem;
+    }
+
+    figure {
+        width: 19rem;
+        height: 19rem;
+    }
+
+    figure .back h2 {
+        font-size: 1.3rem;
+        line-height: 1.2rem;
+        margin-top: 1rem;
+        margin-bottom: 0.50rem;
+        font-weight: bold;
+    }
+
+    figure .back p {
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+        margin-block: 5px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+   
+       .box2 h5 {
+        font-size: 15px;
+    }
+
+    /* .titulo h1{
+        font-size: 2rem;
+        padding-top: 100px;
+        text-align: center;
+    }
+    
+    .titulo h2{
+        font-size: 1.5rem;
+        text-align: center;
+    } */
+
+    .box1 img {
+        width: 20px;
+    }
+
+    .box2 a,
+    .box2 p {
+        font-size: 0.7rem;
+    }
+
+    .box1-item1,
+    .box1-item2,
+    .box1-item3 {
+        padding: 7px;
+
+    }
+   
+   
+   
+   .productos {
+        display: flew;
+        flex-wrap: wrap;
+    }
+    .imagenesProd {
+        max-height: 300px;
+        max-width: 300px;
+    }
+    .contenedorVideo video {
+        width: 300px !important;
+        height: 300px !important;
+    }
+
+    .titulo h1 {
+        font-size: 1.8rem !important;
+        font-weight: bolder;
+    }
+
+    .titulo h2 {
+        font-size: 1.5rem !important;
+        font-weight: bold;
+    }
+
+    .procesoCeramica {
+        margin: 5px 1px;
+        padding: 0px 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .procesoCeramica p {
+        font-size: 1.3rem;
+    }
+
+    .contenedor:hover figure {
+        animation: none;
+        transform: none;
+    }
+
+    figure .front,
+    figure .back {
+        transition: none;
+        transform: none;
+        position: static;
+        border-radius: 0%;
+        background-color: #ffffff;
+    }
+
+    figure {
+        width: 90%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    figure .back h2 {
+        font-size: 1.8rem;
+        margin-top: 1rem;
+        font-weight: bolder;
+    }
+
+    figure .back p {
+        font-size: 1.3rem;
+        line-height: normal;
+        margin-bottom: 0.50rem;
+    }
+
+    .contenedor a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .slideshow-container {
+        max-width: 450px;
+    }
+	
+	  .productos {
+        display: flew;
+        flex-wrap: wrap;
+    }  
+    .imagenesProd {
+        max-height: 410px;
+        max-width: 410px;
+    }  
+    .contenedorVideo video {
+        width: 400px;
+        height: 400px;
+    }
+
+    figure .back h2 {
+        font-size: 1.5rem;
+    }
+
+    figure .back p {
+        line-height: 1.5rem;
+    }
+
+    .contenedor {
+        padding: 0 0.75rem;
+        margin: 0 0.75rem;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .slideshow-container {
+        max-width: 450px;
+    }
+	   .productos {
+        display: flew;
+        flex-wrap: wrap;
+    }   
+    .imagenesProd {
+        max-height: 410px;
+        max-width: 410px;
+    }
+	
+ .contenedorVideo {
+        margin-top: 2%;
+    }
+
+    .contenedorVideo video {
+        width: 400px;
+        height: 400px;
+    }
+
+    .procesoCeramica p {
+        margin: 5% 10%;
+        font-size: 1.4rem;
+    }
+
+    .contenedor {
+        padding: 0 0.75rem;
+        margin: 0 0.75rem;
+    }
+
+    figure {
+        width: 400px;
+        height: 400px;
+    }
+
+    figure .back h2 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-top: 1.3rem;
+        font-weight: bolder;
+    }
+
+    figure .back p {
+        font-size: 1.3rem;
+        line-height: 2rem;
+        margin-bottom: 0.50rem;
+        font-weight: 20px;
+    }
+}
+/*  -------------------------  */
+/*   FIN: RESPONSIVE - TODAS   */
+/*  -------------------------  */
